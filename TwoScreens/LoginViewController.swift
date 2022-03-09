@@ -30,17 +30,21 @@ class LoginViewController: UIViewController {
             showAlert(title: "ERROR", message: "Please enter a valid username or password")
         }
     }
+    
     @IBAction func forgotUserNameButton() {
         showAlert(title: "Username is", message: user)
     }
+    
     @IBAction func forgotPasswordButton() {
         showAlert(title: "Password is", message: password)
         
     }
+    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTextField.text = ""
         passwordTextField.text = ""
     }
+    
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
