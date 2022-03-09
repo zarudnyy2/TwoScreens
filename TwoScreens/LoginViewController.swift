@@ -15,7 +15,6 @@ class LoginViewController: UIViewController {
     private let user = "qwe"
     private let password = "qwe"
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
